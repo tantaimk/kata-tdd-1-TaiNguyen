@@ -15,3 +15,9 @@ Commit 2:
     + Input is a negative number
     + Input is multiple negatives
 - Refactored Calculator add() function.
+
+Commit 3:
+- Applied Karma, Grunt
+- Added gruntfile.js
+- Added package.json
+- Finished question 6 - Numbers bigger than 1000 should be ignored, so adding 2 + 1001  = 2
