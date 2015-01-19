@@ -42,4 +42,8 @@ describe("calculator", function() {
     it("should allow delimiters to be of any length", function() {
         expect(Calculator.add("//[***]\n1***2***3")).toEqual(6);
     });
+
+    it("should allow multiple delimiters like this: “//[delim1][delim2]\n”", function() {
+        expect(Calculator.add("//[*][%]\n1*2%3")).toEqual(6);
+    });
 });

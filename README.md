@@ -25,3 +25,7 @@ Commit 3:
 Commit 4:
 - Finished question 7 - Delimiters can be of any length with the following format:  “//[delimiter]\n”
 - Refactored code
+
+Commit 5:
+- Finished question 8 - Allow multiple delimiters like this:  “//[delim1][delim2]\n”
+- Refactored code
