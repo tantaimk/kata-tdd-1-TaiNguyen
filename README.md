@@ -29,3 +29,6 @@ Commit 4:
 Commit 5:
 - Finished question 8 - Allow multiple delimiters like this:  “//[delim1][delim2]\n”
 - Refactored code
+
+Commit 6:
+- Finished question 9 - Allow multiple delimiters with length longer than one char
