@@ -21,3 +21,7 @@ Commit 3:
 - Added gruntfile.js
 - Added package.json
 - Finished question 6 - Numbers bigger than 1000 should be ignored, so adding 2 + 1001  = 2
+
+Commit 4:
+- Finished question 7 - Delimiters can be of any length with the following format:  “//[delimiter]\n”
+- Refactored code

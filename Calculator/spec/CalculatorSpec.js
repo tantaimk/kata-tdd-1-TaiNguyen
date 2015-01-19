@@ -31,12 +31,15 @@ describe("calculator", function() {
         expect(Calculator.add("-1,2,-5,8")).toEqual(null);
     });
 
-    //step 6
     it("should ignore a number bigger than 1000", function() {
         expect(Calculator.add("1\n1001,3\n4")).toEqual(8);
     });
 
     it("should ignore numbers bigger than 1000", function() {
         expect(Calculator.add("1001\n2,2000\n4\n5,1005")).toEqual(11);
+    });
+
+    it("should allow delimiters to be of any length", function() {
+        expect(Calculator.add("//[***]\n1***2***3")).toEqual(6);
     });
 });

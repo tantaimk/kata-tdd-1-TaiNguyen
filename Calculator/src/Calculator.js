@@ -3,14 +3,19 @@ function Calculator() {
 
 Calculator.add = function(text){
     if(text.trim().length != 0){
-        var index = text.indexOf('//');
         var delimiter = ',';
 
-        //check if there is a custom delimiter
-        if(index != -1){
-            index = text.indexOf('\n');
-            delimiter = text.charAt(index - 1);
-            text = text.substring(index + 1, text.length);
+        var matchResult1 = text.match(/\/\/(.*)\n/);
+        if(matchResult1 != null){
+            var matchResult2 = text.match(/\[(.*)\]/);
+            if(matchResult2 != null){
+                delimiter = matchResult2[1];
+            }
+            else
+            {
+                delimiter = matchResult1[1];
+            }
+            text = text.substring(text.indexOf('\n') + 1, text.length);
         }
 
         var arr = text.split(delimiter);
